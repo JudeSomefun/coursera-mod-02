@@ -1,15 +1,19 @@
-body {
-    min-height: 100vh;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    display: flex;
-    flex-direction: column;
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+
+body {
+ 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+
+}
+
 header {
-    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -21,7 +25,7 @@ section, .menu-container {
     display: flex;
     justify-content: space-evenly;
     gap: 20px;
-    width: 90%;
+
     margin-left: 5%;
     
 }
@@ -81,22 +85,31 @@ section, .menu-container {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        width: 90%;
-        padding: 10%;
+        margin:auto;
+    }
+
+    section{
+        {
+            width: 100%;
+            padding: 5%;
+        }
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
     .menu-container {
         display: flex;
+        gap: 20px;
+        padding: 50px;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content:space-around;
+        
       }
       
-    .menu-item .sushi{
-        display: block;
-        width: 90%;
+    .sushi{
+       width: 100%;
+        
         
     }
        
