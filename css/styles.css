@@ -73,25 +73,10 @@ section, .menu-container {
 }
 
 
-@media screen and (max-width: 991px) {
-    .menu-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    
-     
-        
-      }
-      
-    .menu-container .sushi{
-        clear:both;
-    }
-       
-      }
   
   
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px)  {
     *{
         display: flex;
         flex-direction: column;
@@ -100,3 +85,19 @@ section, .menu-container {
         padding: 10%;
     }
 }
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .menu-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      
+    .menu-item .sushi{
+        display: block;
+        width: 90%;
+        
+    }
+       
+      }
